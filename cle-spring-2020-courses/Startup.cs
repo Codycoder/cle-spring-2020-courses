@@ -44,7 +44,7 @@ namespace cle_spring_2020_courses
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Course}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
