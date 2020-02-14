@@ -1,4 +1,4 @@
-﻿@model cle_spring_2020_courses.Models.CourseModel
+﻿@model IEnumerable<cle_spring_2020_courses.Models.CourseModel>
 @{
     Layout = null;
 }
@@ -12,7 +12,11 @@
 </head>
 <body>
     <h1>Course List</h1>
-    <h3>Name: @Model.Name</h3>
-    <p>Description: @Model.Description</p>
+    @foreach(var course in Model)
+    {
+        <h3>Name: @course.Name</h3>
+        <p>Description: @course.Description</p>
+        <hr />
+    }
 </body>
 </html>
