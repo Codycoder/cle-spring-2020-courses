@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cle-spring-2020-courses", "cle-spring-2020-courses\cle-spring-2020-courses.csproj", "{9DF963B8-6DAC-4E18-9F6F-F0C18DBD439C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cle-spring-2020-courses.Tests", "cle-spring-2020-courses.Tests\cle-spring-2020-courses.Tests.csproj", "{EC4A50AC-AAE4-4C19-8B48-43D9675C45CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DF963B8-6DAC-4E18-9F6F-F0C18DBD439C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF963B8-6DAC-4E18-9F6F-F0C18DBD439C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF963B8-6DAC-4E18-9F6F-F0C18DBD439C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF963B8-6DAC-4E18-9F6F-F0C18DBD439C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC4A50AC-AAE4-4C19-8B48-43D9675C45CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4A50AC-AAE4-4C19-8B48-43D9675C45CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4A50AC-AAE4-4C19-8B48-43D9675C45CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4A50AC-AAE4-4C19-8B48-43D9675C45CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48084757-51B3-47D7-BE29-EF27EF37F89E}
+	EndGlobalSection
+EndGlobal
