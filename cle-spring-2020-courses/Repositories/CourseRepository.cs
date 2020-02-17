@@ -25,9 +25,9 @@ namespace cle_spring_2020_courses.Repositories
             return courseDictionary.Values;
         }
 
-        public CourseModel GetById(int id)
+        public CourseModel GetById(int num)
         {
-            throw new NotImplementedException();
+            return courseDictionary[num];
         }
     }
 }

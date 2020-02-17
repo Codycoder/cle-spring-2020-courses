@@ -15,7 +15,7 @@
     @foreach(var course in Model)
     {
         <h3>Name: @course.Name</h3>
-        <p>Description: @course.Description</p>
+        <a href="/Course/Details/@course.Id">Details</a>
         <hr />
     }
 </body>
