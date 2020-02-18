@@ -10,15 +10,15 @@ namespace cle_spring_2020_courses.Tests
 {
     public class CourseModelTests
     {
-        CourseModel model;
+        Course model;
         
         public CourseModelTests()
         {
-            model = new CourseModel("Course Name", 42, "Statistics");
+            model = new Course("Course Name", 42, "Statistics");
         }
         
         [Fact]
-        public void CourseConstructor_Sets_Name_on_CourseModel()
+        public void CourseConstructor_Sets_Name_on_Course()
         {
             var result = model.Name;
 
@@ -26,7 +26,7 @@ namespace cle_spring_2020_courses.Tests
         }
 
         [Fact]
-        public void CourseConstructor_Sets_Id_on_CourseModel()
+        public void CourseConstructor_Sets_Id_on_Course()
         {
             var result = model.Id;
 
@@ -34,7 +34,7 @@ namespace cle_spring_2020_courses.Tests
         }
 
         [Fact]
-        public void CourseConstructor_Sets_Description_on_CourseModel()
+        public void CourseConstructor_Sets_Description_on_Course()
         {
             var result = model.Description;
 

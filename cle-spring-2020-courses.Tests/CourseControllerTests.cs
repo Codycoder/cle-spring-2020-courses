@@ -27,13 +27,13 @@ namespace cle_spring_2020_courses.Tests
         }
 
         [Fact]
-        public void Index_Passes_AllCourseModels_To_View()
+        public void Index_Passes_AllCourses_To_View()
         {
             // Act
             var result = controller.Index();
 
             // Assert
-            Assert.IsAssignableFrom<IEnumerable<CourseModel>>(result.Model);
+            Assert.IsAssignableFrom<IEnumerable<Course>>(result.Model);
         }
 
         [Fact]
@@ -47,13 +47,13 @@ namespace cle_spring_2020_courses.Tests
         }
 
         [Fact]
-        public void Details_Passes_CourseModel_To_View()
+        public void Details_Passes_Course_To_View()
         {
             // Act
             var result = controller.Details(1);
 
             // Assert
-            Assert.IsType<CourseModel>(result.Model);
+            Assert.IsType<Course>(result.Model);
         }
 
     }

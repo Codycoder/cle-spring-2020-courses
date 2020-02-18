@@ -23,7 +23,7 @@ namespace cle_spring_2020_courses.Controllers
         {
             CourseRepository courseRepo = new CourseRepository();
 
-            CourseModel model = courseRepo.GetById(id);
+            Course model = courseRepo.GetById(id);
 
             return View(model);
         }

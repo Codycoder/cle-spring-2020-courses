@@ -6,26 +6,26 @@ using System.Threading.Tasks;
 
 namespace cle_spring_2020_courses.Repositories
 {
-    public class CourseRepository : IRepository<CourseModel>
+    public class CourseRepository : IRepository<Course>
     {
-        public Dictionary<int, CourseModel> courseDictionary;
+        public Dictionary<int, Course> courseDictionary;
 
         public CourseRepository()
         {
-            courseDictionary = new Dictionary<int, CourseModel>()
+            courseDictionary = new Dictionary<int, Course>()
             {
-                { 1, new CourseModel("C# for Smarties", 1, "It's all you need to learn it all")},
-                { 2, new CourseModel("HTML, CSS, JS, oh my!", 2, "OMG, the front end will become your BFF") },
-                { 3, new CourseModel("Azure for Improving", 3, "Learn it to work there") }
+                { 1, new Course("C# for Smarties", 1, "It's all you need to learn it all")},
+                { 2, new Course("HTML, CSS, JS, oh my!", 2, "OMG, the front end will become your BFF") },
+                { 3, new Course("Azure for Improving", 3, "Learn it to work there") }
             };
         }
         
-        public IEnumerable<CourseModel> GetAll()
+        public IEnumerable<Course> GetAll()
         {
             return courseDictionary.Values;
         }
 
-        public CourseModel GetById(int num)
+        public Course GetById(int num)
         {
             return courseDictionary[num];
         }

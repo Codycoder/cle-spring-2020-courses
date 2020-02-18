@@ -5,18 +5,18 @@ using System.Threading.Tasks;
 
 namespace cle_spring_2020_courses.Models
 {
-    public class CourseModel
+    public class Course
     {
         public string Name { get; set; }
         public int Id { get; set; }
         public string Description { get; set; }
 
-        public CourseModel()
+        public Course()
         {
 
         }
 
-        public CourseModel(string name, int id, string description)
+        public Course(string name, int id, string description)
         {
             Name = name;
             Id = id;
