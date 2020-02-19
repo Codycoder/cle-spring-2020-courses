@@ -14,6 +14,8 @@ namespace cle_spring_2020_courses.Models
         public virtual Instructor Instructor { get; set; }
         public virtual int InstructorId { get; set; }
 
+        public virtual ICollection<Assignment> Assignments { get; set; }
+
 
         public Course()
         {

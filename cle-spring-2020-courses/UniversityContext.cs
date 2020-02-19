@@ -11,6 +11,7 @@ namespace cle_spring_2020_courses
     {
         public DbSet<Course> Courses { get; set; }
         public DbSet<Instructor> Instructors { get; set; }
+        public DbSet<Assignment> Assignments { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
