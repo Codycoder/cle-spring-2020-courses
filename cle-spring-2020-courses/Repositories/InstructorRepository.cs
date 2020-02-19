@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace cle_spring_2020_courses.Repositories
 {
-    public class CourseRepository : IRepository<Course>
+    public class InstructorRepository : IRepository<Instructor>
     {
         private UniversityContext db;
 
-        public CourseRepository(UniversityContext db)
+        public InstructorRepository(UniversityContext db)
         {
             this.db = db;
         }
         
-        public IEnumerable<Course> GetAll()
+        public IEnumerable<Instructor> GetAll()
         {
-            return db.Courses;
+            return db.Instructors;
         }
 
-        public Course GetById(int id)
+        public Instructor GetById(int id)
         {
-            return db.Courses.Single(c => c.Id == id);
+            return db.Instructors.Single(i => i.Id == id);
         }
     }
 }

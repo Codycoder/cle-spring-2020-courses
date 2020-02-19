@@ -13,7 +13,7 @@ namespace cle_spring_2020_courses.Tests
         
         public CourseControllerTests()
         {
-            controller = new CourseController();
+            // controller = new CourseController();
         }
 
         [Fact]

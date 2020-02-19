@@ -10,10 +10,15 @@ namespace cle_spring_2020_courses.Controllers
 {
     public class CourseController : Controller
     {
+        IRepository<Course> courseRepo;
+        
+        public CourseController(IRepository<Course> courseRepo)
+        {
+            this.courseRepo = courseRepo;
+        }
+        
         public ViewResult Index()
         {
-            CourseRepository courseRepo = new CourseRepository();
-
             var model = courseRepo.GetAll();
             
             return View(model);
@@ -21,8 +26,6 @@ namespace cle_spring_2020_courses.Controllers
 
         public ViewResult Details(int id)
         {
-            CourseRepository courseRepo = new CourseRepository();
-
             Course model = courseRepo.GetById(id);
 
             return View(model);

@@ -1,0 +1,24 @@
+﻿@model cle_spring_2020_courses.Models.Instructor
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Instructor Details</title>
+</head>
+<body>
+    <h3>Name: @Model.Name</h3>
+    <p>List of Courses:</p>
+    <ul>
+        @foreach(var course in Model.Courses)
+        {
+            <li>@course.Name</li>
+        }
+    </ul>
+
+</body>
+</html>
