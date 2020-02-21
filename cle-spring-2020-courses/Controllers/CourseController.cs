@@ -16,6 +16,19 @@ namespace cle_spring_2020_courses.Controllers
         {
             this.courseRepo = courseRepo;
         }
+
+        [HttpGet]
+        public ViewResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(Course course)
+        {
+            courseRepo.Create(course);
+            return RedirectToAction("Index");
+        }
         
         public ViewResult Index()
         {

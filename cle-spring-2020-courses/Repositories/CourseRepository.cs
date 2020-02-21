@@ -14,7 +14,13 @@ namespace cle_spring_2020_courses.Repositories
         {
             this.db = db;
         }
-        
+
+        public void Create(Course course)
+        {
+            db.Courses.Add(course);
+            db.SaveChanges();
+        }
+
         public IEnumerable<Course> GetAll()
         {
             return db.Courses;
